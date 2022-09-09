@@ -1,0 +1,45 @@
+.mainCard {
+  z-index: 1;
+  width: 100%;
+  height: 45%;
+  display: flex;
+  background-color: #f7f8fa;
+  justify-content: space-around;
+}
+.coll {
+  flex: 50%;
+  max-width: 50%;
+}
+.titleCard {
+  flex: 45%;
+  max-width: 400px;
+  height: 50%;
+  background-color: white;
+  box-shadow: 2px 5px 5px rgba(129, 128, 128, 0.2);
+  padding: 24px 12px;
+  position: relative;
+  left: 48px;
+  top: 18px;
+}
+
+.titleCard h1 {
+  font-size: 2.1rem;
+  margin: 0;
+  margin-bottom: 4px;
+  line-height: 1.25;
+}
+
+@media screen and (max-width: 800px) {
+  .mainCard {
+    flex-direction: column-reverse;
+  }
+  .coll {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .titleCard {
+    top: 0;
+    left: 0;
+    box-shadow: none;
+  }
+}

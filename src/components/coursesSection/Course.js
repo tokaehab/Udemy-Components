@@ -1,23 +1,18 @@
 import React from "react";
-import style from "./Course.module.css";
+import style from "../../styles/coursesSection/Course.module.css";
+import { Link } from "react-router-dom";
+import RatingBar from "../RatingBar";
 const Course = (props) => {
   return (
-    <div className={style.courseTemplate}>
+    <Link className={style.courseTemplate} to={`/course/${props.course.id}`}>
       <img src={props.course.image} alt={props.course.title} />
       <div className={style.courseDescription}>
         <h4>{props.course.title}</h4>
         <div className={style.author}>{props.course.author}</div>
-        <div className={style.rating}>
-          {props.course.rating}
-          <i className="fa fa-star" aria-hidden="true"></i>
-          <i className="fa fa-star" aria-hidden="true"></i>
-          <i className="fa fa-star" aria-hidden="true"></i>
-          <i className="fa fa-star" aria-hidden="true"></i>
-          <i className="fas fa-star-half-alt"></i>
-        </div>
-        ({props.course.views})<h4>E£{props.course.price}</h4>
+        <RatingBar rating={props.course.rating} />({props.course.ratingCount})
+        <h4>E£{props.course.price}</h4>
       </div>
-    </div>
+    </Link>
   );
 };
 

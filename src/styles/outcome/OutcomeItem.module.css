@@ -1,0 +1,9 @@
+.item {
+  display: inline-flex;
+  margin: 6px;
+}
+
+.icon {
+  margin-right: 8px;
+  font-size: smaller;
+}

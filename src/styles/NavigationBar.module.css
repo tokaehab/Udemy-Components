@@ -1,0 +1,151 @@
+.navBar {
+  width: 100%;
+  background-color: white;
+  box-shadow: 8px 8px 8px rgba(129, 128, 128, 0.2);
+  padding: 0 8px;
+  display: flex;
+  height: 4.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 8vw;
+  min-width: 75px;
+  margin: 2px 8px 2px 2px;
+}
+.logo img {
+  width: 100%;
+}
+.navBar a {
+  text-decoration: none;
+  color: black;
+  padding: 0 12px;
+  cursor: pointer;
+}
+.navBar a:hover {
+  color: #9d24d0;
+}
+
+.teachLink {
+  min-width: 134px;
+}
+.searchBarForm {
+  flex: 30%;
+  max-width: 30%;
+  height: 65%;
+}
+.searchBar {
+  width: 65%;
+  background-color: #f7f9fa;
+  color: #b3b4b5;
+  border: 1px solid black;
+  border-radius: 26px;
+  padding: 12px;
+  padding-left: 18px;
+  display: inline-flex;
+  align-items: center;
+  margin-right: 4px;
+}
+.searchBar input {
+  width: 90%;
+  border: 0;
+  text-overflow: ellipsis;
+  background-color: #f7f9fa;
+  align-self: center;
+  margin: auto;
+  display: inline-block;
+}
+.searchBar input:focus {
+  outline: none;
+}
+
+.searchBarForm button[type="submit"] {
+  border: none;
+  background-color: transparent;
+  width: 15%;
+  padding: 0;
+  font-size: 14px;
+  cursor: pointer;
+  display: inline-block;
+}
+.searchBarForm button[type="submit"]:hover {
+  color: #9d24d0;
+}
+.shoppingIcon {
+  margin: 0 8px;
+  width: 48px;
+  padding: 0 12px;
+  cursor: pointer;
+}
+.shoppingIcon:hover {
+  color: #9d24d0;
+}
+.buttonsContainer {
+  display: inline-flex;
+  height: 100%;
+  align-items: center;
+  margin-right: 12px;
+}
+.navbarButton {
+  min-width: 80px;
+  margin-left: 0.4rem;
+  font-weight: 700;
+  padding: 0 0.8rem;
+  justify-content: center;
+  height: 50%;
+  cursor: pointer;
+  font-size: 0.85rem;
+  border: 1px solid #1c1d1f;
+  background-color: transparent;
+  color: #1c1d1f;
+}
+.navbarButton:hover {
+  background-color: #f5f5f5;
+}
+.signupBtn {
+  background-color: #1c1d1f;
+  color: white;
+  border: 0;
+}
+.signupBtn:hover {
+  background-color: #1c1d1f;
+}
+.globeBtn {
+  min-width: 40px;
+  font-size: 1rem;
+}
+.sideMenu {
+  display: none;
+}
+.mobileIcons {
+  display: none;
+}
+
+@media screen and (max-width: 980px) {
+  .teachLink {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .sideMenu {
+    display: inline-flex;
+  }
+  .logo {
+    margin: auto;
+  }
+  .searchBarForm,
+  .navBar a,
+  .navBar button,
+  .navBar > .shoppingIcon {
+    display: none;
+  }
+  .shoppingIcon {
+    margin: 0;
+    padding-right: 0;
+    padding-left: 24px;
+  }
+  .mobileIcons {
+    display: inline-flex;
+  }
+}
