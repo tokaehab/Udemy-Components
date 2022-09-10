@@ -1,7 +1,6 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import AccordionItem from "./AccordionItem";
-import style from "../../styles/accordion/Accordion.module.css";
+import style from "../../../styles/accordion/Accordion.module.css";
 
 const Accordion = (props) => {
   const [showMore, setShowMore] = useState(false);

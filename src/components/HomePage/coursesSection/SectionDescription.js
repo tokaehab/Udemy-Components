@@ -1,5 +1,5 @@
 import React from "react";
-import style from "../../styles/coursesSection/CoursesSection.module.css";
+import style from "../../../styles/coursesSection/CoursesSection.module.css";
 
 const SectionDescription = (props) => {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
-import style from "../../styles/HeaderCard/HeaderCard.module.css";
-import RatingBar from "../RatingBar";
+import style from "../../../styles/HeaderCard/HeaderCard.module.css";
+import RatingBar from "../../RatingBar";
 
 const HeaderCard = (props) => {
   return (

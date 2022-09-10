@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../styles/mainCard/MainCard.module.css";
+import styles from "../../../styles/mainCard/MainCard.module.css";
 
 const MainCard = () => {
   return (
@@ -11,7 +11,7 @@ const MainCard = () => {
       </div>
       <img
         className={styles.coll}
-        src={require("../../assets/img.jpg")}
+        src={require("../../../assets/img.jpg")}
         alt="Card Cover"
       />
     </section>

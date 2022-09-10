@@ -1,5 +1,5 @@
 import React from "react";
-import style from "../../styles/accordion/AccordionItem.module.css";
+import style from "../../../styles/accordion/AccordionItem.module.css";
 const AccordionItem = (props) => {
   return (
     <div className="accordion-item">

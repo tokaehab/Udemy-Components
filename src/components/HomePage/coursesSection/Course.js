@@ -1,7 +1,7 @@
 import React from "react";
-import style from "../../styles/coursesSection/Course.module.css";
+import style from "../../../styles/coursesSection/Course.module.css";
 import { Link } from "react-router-dom";
-import RatingBar from "../RatingBar";
+import RatingBar from "../../RatingBar";
 const Course = (props) => {
   return (
     <Link className={style.courseTemplate} to={`/course/${props.course.id}`}>

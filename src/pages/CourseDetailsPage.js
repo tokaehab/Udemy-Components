@@ -1,13 +1,12 @@
-import React, { useContext, useEffect } from "react";
-import { useState, useRef } from "react";
+import React, { useContext, useEffect, useState, useRef } from "react";
 import { useParams } from "react-router-dom";
-import CourseContent from "../components/courseContent/CourseContent";
-import HeaderCard from "../components/HeaderCard/HeaderCard";
+import CourseContent from "../components/CourseDetailsPage/courseContent/CourseContent";
+import HeaderCard from "../components/CourseDetailsPage/HeaderCard/HeaderCard";
 import LoadingSpinner from "../components/LoadingSpinner";
 import NavigationBar from "../components/NavigationBar";
-import Outcomes from "../components/outcomes/Outcomes";
-import Requirements from "../components/requirements/Requirements";
-import SideCard from "../components/sideCard/SideCard";
+import Outcomes from "../components/CourseDetailsPage/outcomes/Outcomes";
+import Requirements from "../components/CourseDetailsPage/requirements/Requirements";
+import SideCard from "../components/CourseDetailsPage/sideCard/SideCard";
 import CoursesContext from "../context/CoursesContext";
 
 const CourseDetailsPage = () => {

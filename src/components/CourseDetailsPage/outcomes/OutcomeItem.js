@@ -1,5 +1,5 @@
 import React from "react";
-import style from "../../styles/outcome/OutcomeItem.module.css";
+import style from "../../../styles/outcome/OutcomeItem.module.css";
 const OutcomeItem = (props) => {
   return (
     <div className={style.item}>

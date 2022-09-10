@@ -1,10 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import CoursesList from "./CoursesList";
-import style from "../../styles/coursesSection/CoursesSection.module.css";
+import style from "../../../styles/coursesSection/CoursesSection.module.css";
 import SectionDescription from "./SectionDescription";
-import LoadingSpinner from "../LoadingSpinner";
-import { useContext } from "react";
-import CoursesContext from "../../context/CoursesContext";
+import LoadingSpinner from "../../LoadingSpinner";
+import CoursesContext from "../../../context/CoursesContext";
 
 const CoursesSection = (props) => {
   const courses = useContext(CoursesContext);

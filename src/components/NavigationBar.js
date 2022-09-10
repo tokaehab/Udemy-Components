@@ -1,7 +1,6 @@
-import React from "react";
+import React, { useRef } from "react";
 import styles from "../styles/NavigationBar.module.css";
 import { useSearchParams, Link, useNavigate } from "react-router-dom";
-import { useRef } from "react";
 
 const NavigationBar = (props) => {
   const [search, setSearch] = useSearchParams();

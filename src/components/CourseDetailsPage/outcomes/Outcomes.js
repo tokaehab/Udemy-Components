@@ -1,6 +1,6 @@
 import React from "react";
 import OutcomeItem from "./OutcomeItem";
-import style from "../../styles/outcome/Outcomes.module.css";
+import style from "../../../styles/outcome/Outcomes.module.css";
 
 const Outcomes = (props) => {
   return (

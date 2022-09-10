@@ -1,5 +1,5 @@
 import React from "react";
-import style from "../../styles/requirements/Requirements.module.css";
+import style from "../../../styles/requirements/Requirements.module.css";
 const Requirements = (props) => {
   return (
     <div className={style.container}>

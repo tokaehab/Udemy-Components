@@ -1,10 +1,8 @@
-import React from "react";
+import React, { useEffect, useContext, useState } from "react";
 import Course from "./Course.js";
-import style from "../../styles/coursesSection/CoursesList.module.css";
-import { useContext, useState } from "react";
-import CoursesContext from "../../context/CoursesContext.js";
+import style from "../../../styles/coursesSection/CoursesList.module.css";
+import CoursesContext from "../../../context/CoursesContext.js";
 import { useSearchParams } from "react-router-dom";
-import { useEffect } from "react";
 
 const CoursesList = () => {
   const courses = useContext(CoursesContext);

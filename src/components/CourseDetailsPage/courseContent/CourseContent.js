@@ -1,5 +1,5 @@
 import React from "react";
-import style from "../../styles/courseContent/CourseContent.module.css";
+import style from "../../../styles/courseContent/CourseContent.module.css";
 import Accordion from "../accordion/Accordion";
 
 const CourseContent = (props) => {
