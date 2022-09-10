@@ -1,0 +1,14 @@
+.frame {
+  border: 1px solid #d1d7dc;
+  padding: 18px;
+  width: 45%;
+  margin-left: 10%;
+  margin-top: 18px;
+}
+
+@media screen and (max-width: 1165px) {
+  .frame {
+    margin: auto;
+    margin-top: 18px;
+  }
+}
